@@ -11,3 +11,18 @@
 
 # Specific image file
 WhatsApp Image 2025-01-03 at 13.43.36_25e8e57b.jpg
+
+# Python-specific ignores
+venv/
+env/
+.env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+.env
+.idea/
+.vscode/
