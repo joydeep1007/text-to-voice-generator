@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech in JavaScript</title>
+    <meta name="description" content="Text to Speech Converter - Convert your text to speech easily">
+    <title>Text to Speech Converter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" type="module"></script>
+    <script src="script.js" defer></script>
 </head>
-<body style="background-image: url('WhatsApp Image 2025-01-03 at 13.43.36_25e8e57b.jpg');">
-    <div class="top-panel">
-        <h1>Text to Speech Converter</h1>
-        <p>Enter text in the box below and click "Speak Text" to hear it spoken aloud.</p>
-    </div>
-    <div class="container">
-        <label for="text">Text to speak:</label>
-        <textarea id="text" placeholder="Enter text to speak..."></textarea>
-        <button id="speak">Speak Text</button>
-    </div>
+<body>
+    <main>
+        <div class="top-panel" role="banner">
+            <h1>Text to Speech Converter</h1>
+            <p>Enter text in the box below and click "Speak Text" to hear it spoken aloud.</p>
+        </div>
+        
+        <div class="container" role="main">
+            <label for="text">Text to speak:</label>
+            <textarea 
+                id="text" 
+                name="text"
+                placeholder="Enter text to speak..." 
+                aria-label="Text to be converted to speech"
+                required></textarea>
+            <div class="controls">
+                <button 
+                    id="speak" 
+                    aria-label="Convert text to speech"
+                    class="speak-button">
+                    Speak Text
+                </button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
