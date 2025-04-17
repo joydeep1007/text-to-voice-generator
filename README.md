@@ -1,6 +1,6 @@
 # Text-to-Speech Converter
 
-A simple and elegant web application that converts text input into speech using the Web Speech API.
+A simple and elegant web application that converts text input into speech using Flask and Web Speech API.
 
 ## Features
 
@@ -12,6 +12,7 @@ A simple and elegant web application that converts text input into speech using 
 
 ## Technologies Used
 
+- Python (Flask)
 - HTML5
 - CSS3 (with modern features like backdrop-filter)
 - JavaScript (Web Speech API)
@@ -20,8 +21,20 @@ A simple and elegant web application that converts text input into speech using 
 ## Setup
 
 1. Clone the repository
-2. Open `innovative.html` in a modern web browser
-3. Make sure your browser supports the Web Speech API (most modern browsers do)
+2. Create a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. Install dependencies:
+   ```
+   pip install flask
+   ```
+4. Run the Flask application:
+   ```
+   python app.py
+   ```
+5. Open http://localhost:5000 in your browser
 
 ## Usage
 
@@ -40,16 +53,22 @@ This application works best in:
 ## Project Structure
 
 ```
-├── innovative.html    # Main HTML file
-├── styles.css        # Styling and animations
-├── script.js         # Speech synthesis logic
-└── .gitignore       # Git ignore configuration
+├── app.py           # Flask application
+├── static/          # Static assets
+│   ├── css/         # Stylesheets
+│   ├── js/         # JavaScript files
+│   └── images/     # Image assets
+├── templates/       # HTML templates
+│   └── index.html
+├── requirements.txt # Python dependencies
+└── .gitignore      # Git ignore configuration
 ```
 
 ## Notes
 
 - The Web Speech API requires an internet connection
 - Speech quality may vary depending on the browser and system settings
+- Flask development server should not be used in production
 
 ## License
 
