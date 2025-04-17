@@ -10,9 +10,10 @@ body{
     align-items: center;
     padding: 2rem;
     min-height: 100vh;
-    background: url('WhatsApp Image 2025-01-03 at 13.43.36_25e8e57b.jpg') no-repeat center center fixed;
+    background: url('/static/images/amla.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
+
 }
 
 body::before {
